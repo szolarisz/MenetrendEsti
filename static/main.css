@@ -1,0 +1,50 @@
+body{
+    background-color:navy;
+    color: navy;
+}
+#container {
+    background-color:azure;
+    width: 800px;
+    padding: 8px;
+    margin: 5px auto 5px auto;
+}
+
+#header {
+    background-color: beige;
+}
+
+#body {
+    background-color: beige;
+}
+
+#menetrend {
+    background-color: beige;
+}
+
+#urlap {
+    background-color: beige;
+}
+
+#listazashoz {
+    background-color: beige;
+}
+
+#vonatlista {
+    background-color: beige;
+    width: 50%;
+    float: left;
+}
+
+#vonat{
+    background-color: beige;
+}
+
+#allomaslista {
+    background-color: beige;
+    width: 50%;
+    float: right;
+}
+
+#allomas{
+    background-color: beige;
+}
