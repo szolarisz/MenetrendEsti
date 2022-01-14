@@ -41,3 +41,14 @@ module.exports.allomasLista = function( callback ) {
         }
     })
 }
+
+module.exports.vonatEsemenyek = function( vonat, callback) {
+    const myQuery = `SELECT vNev, aNev, ora, perc, esemeny FROM allomas INNER JOIN idopontok ON allomas.aID= idopontok.aID INNER JOIN vonat ON vonat.vID=idopontok.vID WHERE vonat.vId=${vonat} ORDER BY ora, perc;`;
+    connection.query(myQuery, (err, result, fields) => {
+        if( err ){
+            callback(err, null)
+        }else{
+            callback(null, JSON.parse(JSON.stringify(result)))
+        }
+    })
+}

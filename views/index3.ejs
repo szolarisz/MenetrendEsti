@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menetrend Budapestről - Szegedre adott napon</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Budapest - Szeged vonal egy napi teljesített menetidejei</h1>
+            </div>
+        <div id="body">
+            <div id="menetrend">
+
+            </div>
+            <div id="urlap">
+                <%=lista[0].vNev%><br>
+                        <% for(adat of lista) { %>
+                            <%= adat.aNev %> <%= adat.ora %>:<%= adat.perc %> (<%= adat.esemeny %>)<br>
+                        <% } %>
+                        
+                        
+                    </select>
+                </div>
+                
+            </form>
+                
+            </div>
+            <div id="eredmeny"></div>
+        </div>    
+    </div>
+    
+</body>
+</html>

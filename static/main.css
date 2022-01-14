@@ -1,5 +1,5 @@
 body{
-    background-color:navy;
+    background-color:aliceblue;
     color: navy;
 }
 #container {
@@ -47,4 +47,9 @@ body{
 
 #allomas{
     background-color: beige;
+}
+
+#eredmeny{
+    background-color: darkgreen;
+    color: gold;
 }
